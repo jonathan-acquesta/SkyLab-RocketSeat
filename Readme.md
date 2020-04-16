@@ -1,8 +1,8 @@
-## SkyLab RocketSeat
-#Objetivo
+# SkyLab RocketSeat
+## Objetivo
 - Centralizar as interações com a plataforma SkyLab RocketSeat
 
-#Key-Result
+## Key-Result
 - Curso de Javascript
 - Curso de Javascript ES6
 - Curso de Node JS
