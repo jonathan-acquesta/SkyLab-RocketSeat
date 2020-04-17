@@ -13,7 +13,7 @@ var address = {
 };
 
 Return the following content:
-I will visite you at 22 Braga Street on Conzaga, in the Santos city of São Paulo state 
+I will visite you at 22 Braga Street, Conzaga neighborhood, in the Santos city of São Paulo state 
 
 # Take a look
 ![](https://github.com/jonathan-acquesta/SkyLab-RocketSeat/blob/master/Javascript%20Course/Introdution%20Challenge/Exercise%20One/Record.gif)
