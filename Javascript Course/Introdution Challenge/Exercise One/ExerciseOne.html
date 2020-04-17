@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyLab RocketSeat</title>
+</head>
+
+<body>
+    <div class="global">
+        <img src="Banner.jpg" alt="Trulli">
+        <div class="content">
+            <div class="divForm">
+
+                <label class="labelTitle">ADDRESS</label>
+                <br /><br />
+                <label class="labelForm">Public Place:</label>
+                <input class="txtForm" id="TxtPublicPlace" type="text" value="Braga Street">
+                <br /><br />
+                <label class="labelForm">Number:</label>
+                <input class="txtForm" id="TxtNumber" type="text" value="22">
+                <br /><br />
+                <label class="labelForm">Neighborhood:</label>
+                <input class="txtForm" id="TxtNeighborhood" type="text" value="Conzaga">
+                <br /><br />
+                <label class="labelForm">City:</label>
+                <input class="txtForm" id="TxtCity" type="text" value="Santos">
+                <br /><br />
+                <label class="labelForm">State:</label>
+                <input class="txtForm" id="TxtState" type="text" value="São Paulo">
+            </div>
+            <br />
+            <input class="buttonForm" type="button" value="Show Address" onclick="ShowAddress()">
+            <br/>
+        </div>
+        <br />
+        <div class="contentResult">
+            <br/>
+            <label id="LblAddress" class="labelResult">Hi, what's your address? </label>
+            <br/>
+        </div>
+
+
+    </div>
+    <script>
+        function ShowAddress() {
+            let address = {
+                publicPlace: TxtPublicPlace.value,
+                number: TxtNumber.value,
+                neighborhood: TxtNeighborhood.value,
+                city: TxtCity.value,
+                state: TxtState.value
+            };
+
+            LblAddress.innerHTML = "I will visite you at " + address.number + " " + address.publicPlace + " on " + address.neighborhood + ", in the " + address.city + " city of " + address.state + " state";
+        }
+    </script>
+
+    <style>
+        .divForm {
+            margin-left: 30%;
+            width: 40%;
+        }
+        
+        .labelForm {
+            width: 100px;
+            float: left;
+            display: block;
+        }
+        
+        .txtForm {
+            width: 250px;
+        }
+        
+        .labelTitle {
+            font-weight: bold;
+            font-size: large;
+            display: block;
+            text-align: center;
+        }
+        
+        .labelResult {
+            font-weight: bold;
+        }
+        
+        .content,
+        .contentResult {
+            padding: 5px;
+            background-color: #ffffff;
+            border: rgb(196, 196, 196);
+            border-style: dashed;
+        }
+        
+        .contentResult {
+            text-align: center;
+        }
+        
+        .global {
+            width: 984px;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .buttonForm {
+            margin-left: 89%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f3f3f3;
+            text-align: center;
+            color: rgb(0, 19, 54);
+        }
+    </style>
+</body>
+
+</html>
